@@ -12,7 +12,7 @@ sequenceDiagram
     server-->>browser:  Ask for new HTTP GET request
     deactivate server
 
-    Note left of server: Ask the browser to do a new HTTP GET request to the address defined in the header's Location
+    Note left of server: Request that the browser send a new HTTP GET request to the URL listed in the Location header
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
